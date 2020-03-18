@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome</title>
+<style>
+
+.header{
+
+	padding: 20px;
+	width: 100%;
+	flex:1;
+}
+
+.head{
+	text-align: center;
+	margin:auto;
+}
+
+.display-cards{
+	padding: 20px;
+	flex-wrap: wrap;
+}
+
+.card{
+	padding: 10px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-basis:25%;
+	flex-direction: column;
+	justify-content: space-around;
+	box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+	
+}
+
+.card:hover{
+	background-color: #ccb9da;
+}
+
+.card-head{
+
+	display: flex;
+	flex:1;
+	padding: 3px;
+	margin-bottom: 10px;
+	background-color:#1abc9c;
+}
+
+h4.title{
+	margin: auto;
+}
+
+
+.card-body{
+	//border: 1px solid black;
+	flex:1;
+	background-color: #0066A2;
+}
+
+p.content{
+	display: inline-block;	
+	padding:5px 0px 5px 25px;
+	line-height: 150%;
+}
+
+.choice-yes{
+	font-size: 40px;
+	color: #00c853;
+}
+
+.choice-no{
+	font-size: 40px;
+	color: #B00020;
+}
+
+@media (min-width: 900px){
+
+	.display-cards{
+		display: flex;
+		justify-content: space-around;
+		flex: 1;
+	}
+}
+
+</style>
+</head>
+
+
+<body id="b1">
+
+<div class="main">
+
+	<div class="header">
+		<h2 class="head">Games Arena</h2>
+	<div>
+
+	<div class="display-cards" id="showcase">
+
+	</div>
+
+</div>
+
+
+
+</body>
+<script src="gamesArena.js"> </script>
+
+</html>
